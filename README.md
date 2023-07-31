@@ -52,7 +52,7 @@ Query Parameters:
 Response:
 - JSON object with event, empty object with HTTP 400 on fail
 
-Query Example:
+Query Example:  
 `curl -X GET http://localhost:3000/view -H 'Content-Type: application/json' -d '{"id": 2}'`
 
 ### DELETE /remove
