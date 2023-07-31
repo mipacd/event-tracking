@@ -26,7 +26,7 @@ Response Parameters:
 Response:
 - success = True, HTTP 200 on success. success= False, HTTP 400 on fail
 
-Query Examples:
+Query Examples:  
 `curl -X POST http://localhost:3000/create -H 'Content-Type: application/json' -d '{"metric": "CPU_UTIL", "value": 70}'`
 
 `curl -X POST http://localhost:3000/create -H 'Content-Type: application/json' -d '{"metric": "MEM_UTIL", "value": 45}'`
@@ -40,7 +40,7 @@ Query Parameters:
 Response:
 - JSON object with list of events, empty object with HTTP 400 on fail
 
-Query Example:
+Query Example:  
 `curl -X GET http://localhost:3000/list -H 'Content-Type: application/json'`
 
 ### GET /view
@@ -67,7 +67,7 @@ Response Parameters:
 Response:
 - success = True, HTTP 200 on success. success= False, HTTP 400 on fail
 
-Query Example:
+Query Example:  
 `curl -X DELETE http://localhost:3000/remove -H 'Content-Type: application/json' -d '{"id": 2}'`
 
 ### GET /search
@@ -79,6 +79,6 @@ Query Parameters:
 Response:
 - JSON object with event, empty object with HTTP 400 on fail
 
-Query Example:
+Query Example:  
 `curl -X GET http://localhost:3000/search -H 'Content-Type: application/json' -d '{"metric": "cpu"}'`
 
